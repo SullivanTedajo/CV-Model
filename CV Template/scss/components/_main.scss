@@ -1,0 +1,16 @@
+@forward '../globals';
+
+.main{
+    padding: 1em 3em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+    background-color: var(--light-gray);
+}
+@media screen and (max-width:37.5em) {
+    .main{
+        display: block;
+        padding: 1em;
+    }
+    
+}

@@ -1,0 +1,204 @@
+/* --- ******  PARAMETRAGE DES ELEMENTS GLOBAUX DU SITE  ****** --- */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.4rem;
+}
+
+html {
+  margin: 0;
+  font-size: 10px;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+button, input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --white-color:#fff;
+  --black-color:#000;
+  --green-color:#009688;
+  --light-gray:#F1F1F1;
+  --gray-color:#757575;
+}
+
+.about__skill-photoshop, .about__skill-photography, .about__skill-illustrator, .about__skill-media, .about__language-english, .about__language-spanish, .about__language-german {
+  position: relative;
+  background-color: var(--light-gray);
+  border-radius: 0.8em;
+  height: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+}
+
+.about__percentage-photography, .about__percentage-illustrator, .about__percentage-photoshop, .about__percentage-media, .about__percentage-english, .about__percentage-spanish, .about__percentage-german {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0.8em;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.about__skills, .about__languages {
+  padding: 1em 1em;
+  color: var(--gray-color);
+}
+
+.course__frontend, .course__developper, .about__skills-title, .about__languages-title, .course__title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--gray-color);
+}
+
+.course__title {
+  font-size: 2em;
+}
+
+.about {
+  -ms-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: var(--white-color);
+  padding-bottom: 1em;
+}
+.about__featured-img {
+  position: relative;
+  background: url("../img/jane-doe.jpg") center/cover no-repeat;
+  height: 18em;
+}
+.about__name {
+  position: absolute;
+  left: 0.5em;
+  bottom: 0.5em;
+  margin: 0;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+.about__icon {
+  color: var(--green-color);
+  width: 1em;
+  height: 1em;
+  font-size: 1.4em;
+}
+.about__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 1em;
+}
+.about__percentage-photography {
+  right: 20%;
+}
+.about__percentage-illustrator {
+  right: 25%;
+}
+.about__percentage-photoshop {
+  right: 10%;
+}
+.about__percentage-media {
+  right: 50%;
+}
+.about__percentage-english {
+  right: 0;
+}
+.about__percentage-spanish {
+  right: 45%;
+}
+.about__percentage-german {
+  right: 70%;
+}
+
+.bi {
+  color: var(--green-color);
+  width: 1em;
+  height: 1em;
+  font-size: 1.4em;
+}
+
+.main {
+  padding: 1em 3em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  background-color: var(--light-gray);
+}
+
+@media screen and (max-width: 37.5em) {
+  .main {
+    display: block;
+    padding: 1em;
+  }
+}
+.course {
+  -ms-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.course__experiences-list {
+  background-color: var(--white-color);
+  padding: 2em 1em;
+  margin-bottom: 1em;
+}
+.course__experience {
+  padding-inline: 1.2em;
+}
+.course__date {
+  color: var(--green-color);
+}
+.course__active {
+  padding: 0.3em;
+  border-radius: 0.3em;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+.course__description {
+  color: var(--black-color);
+}
+.course__education-list {
+  background-color: var(--white-color);
+  padding: 2em 1em;
+}
+.course__education {
+  padding-inline: 1.2em;
+}
+
+.footer {
+  color: var(--white-color);
+  background-color: var(--green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1em;
+  gap: 0.2em;
+}
+.footer__link {
+  color: var(--white-color);
+}/*# sourceMappingURL=style.css.map */

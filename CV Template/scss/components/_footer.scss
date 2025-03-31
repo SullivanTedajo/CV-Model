@@ -1,0 +1,15 @@
+@forward '../globals';
+
+.footer{
+    color: var(--white-color);
+    background-color: var(--green-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block:1em ;
+    gap: .2em;
+    &__link{
+        color: var(--white-color);
+    }
+}

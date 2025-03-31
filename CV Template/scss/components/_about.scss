@@ -1,0 +1,112 @@
+@forward '../globals';
+@forward '../util';
+@use '../util' as u;
+
+.about{
+
+    @include u.box-shadow(rgba(149, 157, 165, 0.2) 0px 8px 24px);
+    background-color: var(--white-color);
+    padding-bottom: 1em;
+
+    &__featured-img{
+        position: relative;
+        background: url('../img/jane-doe.jpg') center / cover no-repeat;
+        height: 18em;
+    }
+
+    &__name{
+        position: absolute;
+        left: .5em;
+        bottom: .5em;
+        margin: 0;
+        font: {
+            size: 1.9em;
+            weight:500 ;
+        }
+    }
+
+    &__icon{
+        color: var(--green-color);
+        width: 1em;
+        height: 1em;
+        font: {
+            size: 1.4em;
+        }
+    }
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em 1em;
+        
+    }
+
+
+    // Skills
+
+    &__skills{
+        @extend %about-set-up;
+
+    }
+    &__skills-title{
+       @extend %about-title;
+    }
+
+    &__skill-photoshop, &__skill-photography, &__skill-illustrator, &__skill-media{
+        @extend %percentage-container;
+    }
+
+    &__percentage-photography{
+        @extend %percentage-value;
+        right: 20%;  
+    }
+    &__percentage-illustrator{
+        @extend %percentage-value;
+        right: 25%;  
+    }
+    &__percentage-photoshop{
+        @extend %percentage-value;
+        right: 10%;  
+    }
+    &__percentage-media{
+        @extend %percentage-value;
+        right: 50%;  
+    }
+
+    // Language 
+    
+    &__languages{
+        @extend %about-set-up;
+    }
+    &__languages-title{
+       @extend %about-title;
+    }
+    &__language-english, &__language-spanish, &__language-german {
+        @extend %percentage-container;
+    }
+    &__percentage-english{
+        @extend %percentage-value;
+        right: 0;
+    }
+    &__percentage-spanish{
+        @extend %percentage-value;
+        right: 45%;
+    }
+    &__percentage-german{
+        @extend %percentage-value;
+        right: 70%;
+    }
+
+
+
+}
+
+.bi{
+    color: var(--green-color);
+        width: 1em;
+        height: 1em;
+        font: {
+            size: 1.4em;
+        }
+}

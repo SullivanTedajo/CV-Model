@@ -1,0 +1,47 @@
+@forward '../globals';
+@forward '../util';
+@use '../util' as u;
+
+.course{
+    @include u.box-shadow(rgba(149, 157, 165, 0.2) 0px 8px 24px);
+   
+
+    // Work experience 
+    &__experiences-list{
+    background-color: var(--white-color);
+    padding: 2em 1em;
+    margin-bottom: 1em;
+    }
+    &__experience{
+        padding-inline: 1.2em;
+
+    }
+    &__title{
+       @extend %course-title;
+    }
+    &__frontend, &__developper{
+       @extend %about-title;
+    }
+    &__date{
+        color: var(--green-color);
+    }
+    &__active{
+        padding: 0.3em;
+        border-radius: .3em;
+        background-color: var(--green-color);
+        color: var(--white-color);
+    }
+    &__description{
+        color: var(--black-color);
+    }
+
+    // Education list 
+
+    &__education-list{
+    background-color: var(--white-color);
+    padding: 2em 1em;
+    }
+    &__education{
+        padding-inline: 1.2em;
+    }
+}
